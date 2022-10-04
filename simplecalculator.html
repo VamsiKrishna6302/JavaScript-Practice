@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <label>Enter number 1</label>
+        <input type="text" id="1"><br><br>
+        <label>Enter number 2</label>
+        <input type="text" id="2"><br><br>
+        <label>total</label>
+        <input type="text" id="tot"><br><br>
+        <input type="reset" id="reset"><br><br>
+        <button type="button" onclick="myfunction(1)" id="add" value="add">add</button>
+        <button type="button" onclick="myfunction(2)" id="sub" value="sub">sub</button>
+        <button type="button" onclick="myfunction(3)" id="mult" value="mult">mult</button>
+        <button type="button" onclick="myfunction(4)" id="div" value="div">div</button>
+        <button type="button" onclick="myfunction(5)" id="rest" value="div">div</button>
+        <script>
+            function myfunction(choice){
+                r1=Number(document.getElementById("1").value)
+                r2=Number(document.getElementById("2").value)
+                total=Number(document.getElementById("tot").value)
+                switch(choice){
+                    case 1:
+                        total=r1+r2;
+                        break;
+                    case 2:
+                        total=r1-r2
+                        break
+                    case 3:
+                        total=r1*r2
+                        break
+                    case 4:
+                        total=r1/r2
+                        break
+                    case 5:
+                        document.getElementById("reset")            
+                }
+                document.getElementById("tot").value=total     
+            }    
+        </script>
+    </body>
+</html>

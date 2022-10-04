@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <input type="number" id="1">
+        <button type="button" onclick="vamsi()">clickme</button>
+        <div id="2"></div>
+        <script>
+
+            function vamsi(){
+                var1=0
+                var2=1
+                result=""
+                k=document.getElementById("1").value
+                for(i=0;i<=k;i++){
+                    n=var1
+                    document.getElementById("2").innerHTML=result
+                    result+="<p>"+var1+"</p>"
+                    var1=var2
+                    var2=n+var2
+                }
+            }    
+        </script>
+    </body>
+</html>

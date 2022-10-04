@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <p id="id"></p>
+        <script>
+            const person = {
+                firstName: "vamsi",
+                lastName : "krishna",
+                fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+            document.getElementById("id").innerHTML=person.fullname();
+            //const x=vamsi(4,3);
+           // function vamsi(a,b)
+            //{
+            //    return 4*3;
+           // }
+           document.write(person.fullname)
+            //document.getElementById("id").innerHTML=x;
+        </script>
+    </body>
+</html>

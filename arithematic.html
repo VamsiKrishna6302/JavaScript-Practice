@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <input type="number" id ="a" >
+        <input type="number" id ="b" >
+        <button type="button" click="add()" id=add>add</button>
+        <button type="button" click="sub()" id=sub>sub</button>
+        <button type="button" click="mul()" id=mul>mul</button>
+        <button type="button" click="div()" id=add>div</button>
+
+        <script>
+            let a=Number(document.getElementById("a").value)
+            let b=Number(document.getElementById("b").value)
+            function add(){
+                let a=Number(document.getElementById("a").value)
+                let b=Number(document.getElementById("b").value)
+                document.write(a+b)
+            }
+            function sub(){
+                document.write(a-b)
+            }
+            function mul(){
+                document.write(a*b)
+            }
+            function div(){
+                document.write(a/b)
+            }
+
+        </script>
+    </body>
+</html>

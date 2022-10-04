@@ -1,0 +1,31 @@
+
+<html>
+<body>
+ <div id="h"></div>
+ <script>
+  var v = 0, k= 1,t="TEXT-GROWING",color;
+  function a()
+  {
+    if(k==1){
+        v=v+5,color="red";
+   }    
+   else{
+        v=v-5,color="blue";
+   }    
+   document.getElementById("h").innerHTML = "<h1 style=\"font-size: "+v+"px ; margin: 0px; color : "+color+"\"><b> "+t+"</b></h1>";
+    if(v==50){
+        k= 0, t="TEXT-SHRINKING";
+   }
+    if(v==5){
+        k = 1, t="TEXT-GROWING";
+    } 
+    krishna();
+  }
+  function krishna()
+  {
+   setTimeout(a,100);
+  }
+  krishna();
+ </script>
+</body>
+</html>
